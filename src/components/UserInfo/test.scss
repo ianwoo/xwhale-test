@@ -1,0 +1,74 @@
+.crazy-grid {
+  width: 100vw;
+  height: calc(100vw + 45px);
+  display: flex;
+  flex-direction: column;
+  background: #141f2d;
+  gap: 5px;
+  .flex-row {
+    display: flex;
+    flex-grow: 1;
+    gap: 5px;
+    .box {
+      width: calc(100vw / 8);
+      height: calc(100vw / 8);
+      font-size: 14px;
+      @media screen and (max-width: 1024px) {
+        width: calc(100vw / 6);
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+
+      border-radius: 12px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.hash1b2634 {
+        background: #1b2634;
+      }
+      &.hash202a38 {
+        background: #202a38;
+      }
+      &.hash26313d {
+        background: #26313d;
+      }
+      &.title {
+        font-size: 24px;
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+      &.green {
+        background: #a9f884;
+        color: #000;
+      }
+      &.black {
+        background: #000;
+        font-weight: 900;
+      }
+      &.width2 {
+        width: calc(100vw / 4);
+        @media screen and (max-width: 1024px) {
+          width: calc(100vw / 3);
+        }
+      }
+      &.width3 {
+        width: calc(100vw * (3 / 8));
+        @media screen and (max-width: 1024px) {
+          width: 50vw;
+        }
+      }
+      &.disappear {
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+
+      div {
+        padding: 40px;
+      }
+    }
+  }
+}
